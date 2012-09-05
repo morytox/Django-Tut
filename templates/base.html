@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="/media/css/style.css">
+</head>
+<body>
+<div id="wrapper">
+	<div id="innerwrapper">
+		<div id="header">
+			<div id="logo">
+				<a href="http://www.cloudcontrol.com"></a>
+			</div>
+			<div id="headline">
+		</div>
+		<div id="bodycont">
+		{% block content %}
+		{% endblock %}
+		</div>	
+		</div>
+	</div>
+</div>
+</body>
+</html>
